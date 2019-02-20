@@ -8,13 +8,13 @@
 </head>
 <body <?php body_class(); ?>>
    <div class="container-fluid">
-   <nav class="navbar navbar-expand-md sticky-top navbar-light" role="navigation">
+   <nav class="navbar navbar-expand-md navbar-light" role="navigation">
       <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/assets/images/navbar_footer/iconCoffeePlace.png" width="70" height="60">    Coffee Place</a>
+            <a class="navbar-brand" href="<?php echo get_home_url() ?>"><img class="img-fluid" src="<?php bloginfo('template_directory'); ?>/assets/images/navbar_footer/iconCoffeePlace.png" width="70" height="60">  Coffee Place</a>
             <?php 
             wp_nav_menu( array(
                 'theme_location'    => 'primary',

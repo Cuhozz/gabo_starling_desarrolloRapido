@@ -1,18 +1,25 @@
 <?php get_header(); ?>
-
 <!-- Seccion de imagen destacada  -->
 <div class="row">
-    <div class="col-12 welcomePages">
-        <img class='img-full-width w-100 thumbnail' src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID),'featured_image_home'); ?>" />
-        <div class="captionHome">
-            <h1 class="coffee_place_restaurant">Coffee Place Restaurant</h1>
-            <h4 class="mt-2">We believe a cup of coffee is<br>one of the most important, simple pleasures in life</h4>
-            <button type="button" class="btn btnShop">Explore our shop</button>
-        </div>
-    </div>
-</div>
+	<div class="col-sm-12 col-lg-12 col-md-12 d-none d-sm-block thumbnail text-center"><img class='img-fluid'src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID),'thumbnail'); ?>"/>
+<?php $featured_image_home=get_post_meta(get_the_ID( ),'featured_image_home', true );
+echo "<h1>".$featured_image_home."</h1>"
+?>
+ <div class="welcomePages">
+ <h1 class="coffee_place_restaurant">Coffee Place Restaurant</h1>
+ <h4>Creemos que una taza de Café<br>es uno de los mas importantes, placeres en la vida</h4>
+<button type="button" class="btn btnShop">Ir a la tienda</button>
+ </div>
+	</div>
+	</div>
+  <!-- COMENTARIOS PARA GABO: 
+        la seccion del header sigue igual , creo que usted tiene la parte que si sirve.
+
+        clases nuevas:
+        home_title_dishes.(buscar en el scss)-->
 
 
+<!--     FIN        -->
 
 <!---     SECCION DE  TITULO DE PAGINA-->
 <div class="row">
@@ -153,7 +160,7 @@ $chef_message =get_post_meta( get_the_ID( ), 'chef_message', true );
 		echo "<p class='home_title_about'>".$chef_label."</p>";
 		echo "<p class='i_can_give wow fadeInRight'>".$chef_message."</p>";
     ?>
-		 <button type="button" class="btn btn-outline-light home_btn_about mb-4">About</button>
+		 <button type="button" class="btn btn-outline-light home_btn_about mb-4">Nosotros</button>
 	</div>
 	<div class="col-lg-1 col-sm-1  col-md-1"> </div>
 </div>
@@ -161,7 +168,7 @@ $chef_message =get_post_meta( get_the_ID( ), 'chef_message', true );
 	<div class="col-lg-1 col-sm-4"></div>
 	<div class="col-lg-10 col-sm-4">
 		<div class="text-center">
-			<p class="home_title_dishes mt-1">Daily Dishes</p>
+			<p class="home_title_dishes mt-1">Platos diarios</p>
 
 		</div>
 		<div class="col-lg-1 col-sm-4"></div>
@@ -280,10 +287,13 @@ $chef_message =get_post_meta( get_the_ID( ), 'chef_message', true );
 <div class="row shoping_lets_bg mt-4">
 	<div class="col-sm-12 col-lg-12 col-md-12 text-center">
 		<div class="">
-			<p class="shoping_lets ">"Let´s start shopping"</p>
-			 <button type="button" class="btn btn-outline-light home_btn_contact mb-5">Contact us</button>
+			<p class="shoping_lets ">"Vamos a comprar"</p>
+			 <button type="button" class="btn btn-outline-light home_btn_contact mb-5">Contactanos</button>
 		</div>
 	</div>		
 </div>
 
 <?php get_footer(); ?>
+
+
+

@@ -11,7 +11,8 @@ function load_assets(){
     wp_enqueue_script( 'slider_js', 'https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js');
     wp_enqueue_script( 'scripts_js',get_template_directory_uri().'/assets/js/scripts.js');
     wp_enqueue_style('style',get_stylesheet_uri()); 
-    wp_enqueue_style( 'slider_css', 'https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css' );   
+    wp_enqueue_style( 'slider_css', 'https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css' ); 
+    wp_enqueue_style('fonts','https://fonts.googleapis.com/css?family=Felipa|Lato|Montserrat');
 }
 
 register_nav_menus( array( 'primary' => __( 'Primary Menu', 'CoffePlace' ), )); 

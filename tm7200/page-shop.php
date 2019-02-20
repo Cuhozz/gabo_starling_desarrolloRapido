@@ -11,12 +11,12 @@
 </div>
 
 <div class="parallax mt-3" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/shop/img_parallax.png');">
-    <h3 class="trendTitle"><br><br>Categories</h3>
+    <h3 class="sectionTitle"> Categories</h3>
 </div>
 
 <!-- Categories -->
-<div class="row mt-4 mb-4 categoriesShop">
-    <div class="col-sm-6 col-md-7 col-lg-8 categoriesBig">
+<div class="row mt-2 mb-4 categoriesShop">
+    <div class="col-12 col-sm-8 col-md-7 col-lg-8  categoriesBig">
         <?php 
             $category1Image = get_field('categoriesshopimage1');  
             $category1Text = get_post_meta( get_the_ID( ), 'categoriesshoptitle1', true ); 
@@ -28,7 +28,7 @@
             ?>
         </div>
     </div>
-    <div class="col-sm-6 col-md-5 col-lg-4 categoriesSmall">
+    <div class="col-12 col-sm-4 col-md-5 col-lg-4 categoriesSmall">
         <div class="containerCategorySmall1">
             <?php 
             $category2Image = get_field('categoriesshopimage2');  
@@ -58,14 +58,14 @@
 
 <!-- Trend products -->
 <div class="parallax" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/shop/img_parallax.png');">
-    <h3 class="trendTitle"><br><br>Trend products</h3>
+    <h3 class="sectionTitle">Trend products</h3>
 </div>
 
-<div class="trendProducts mb-5 d-flex" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/shop/backShopTrend.png');">
+<div class="trendProducts mb-5 " style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/shop/backShopTrend.png');">
 
-    <div class="row mb-5 mt-5">
-        <div class="col-md-2 col-lg-2"></div>
-        <div class="col-sm-8 col-md-8 col-lg-6">
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="card"><a href="#" style="text-decoration: none;">
                     <?php 
             $product1Image = get_field('featured_productimage1');  
@@ -81,8 +81,8 @@
                     </div>
                 </a></div>
         </div>
-        <div class="col-md-2 col-lg-5"></div>
-        <div class="col-sm-8 col-md-8 col-lg-6 mt-5">
+        <div class="col-md-2 col-lg-2"></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="card"><a href="#" style="text-decoration: none;">
                     <?php 
             $product2Image = get_field('featured_productimage2');  
@@ -101,9 +101,9 @@
         <div class="col-md-1 col-lg-1"></div>
     </div>
 
-    <div class="row mt-5">
+    <div class="row">
         <div class="col-md-1 col-lg-1"></div>
-        <div class="col-sm-8 col-md-8 col-lg-6">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="card"><a href="#" style="text-decoration: none;">
                     <?php 
             $product3Image = get_field('featured_productimage3');  
@@ -119,7 +119,8 @@
                     </div>
                 </a></div>
         </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
+        <div class="col-md-2 col-lg-2"></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="card"><a href="#" style="text-decoration: none;">
                     <?php 
             $product4Image = get_field('featured_productimage4');  
@@ -135,12 +136,13 @@
                     </div>
                 </a></div>
         </div>
+        <div class="col-md-1 col-lg-1"></div>
     </div>
 
 </div>
 
 <div class="parallax" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/images/shop/img_parallax.png');">
-    <h3 class="alsoYouShop"><br><br>Also you might get interest on this items</h3>
+    <h3 class="alsoYouShop">Also you might get interest on this items</h3>
 </div>
 
 <div class="row mt-2">
